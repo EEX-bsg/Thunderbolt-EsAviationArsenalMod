@@ -9,7 +9,7 @@
 	<Name>Thunderbolt-E'sAviationArsenalMod</Name>
 	<Author>EEX-slime</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build -->
-	<Version>0.0.1</Version>
+	<Version>0.0.2</Version>
 	<LoadOrder>2</LoadOrder>
 	
 	<Description>
@@ -133,6 +133,7 @@
 		<AudioClip name="machinegunfire" path="Sounds/RifleFire.wav" />
 		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
 		<AudioClip name="Reload" path="Sounds/Reload.wav" />
+		<AudioClip name="MedievalCannonHitSound" path="Sounds/MedievalCannonHitSound.wav" />
 		<!--Modアイコン-->
 		<Texture name="icon" path="icon.png" />
 		<!--アセット-->
