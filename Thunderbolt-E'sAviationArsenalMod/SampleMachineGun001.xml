@@ -56,12 +56,12 @@ Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
 		<Key displayName="Reload" key="reload" default="R" /> 
-		<Slider displayName="Power" key="power" min="20" max="1000" default="180 " unclamped="false"/>
+		<Slider displayName="Power" key="power" min="20" max="1000" default="300 " unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.0" max="80.0" default="16.0" unclamped="false"/>
-		<Slider displayName="Reload Time" key="reload-time" min="0.0" max="30.0" default="7.0" unclamped="false"/>
+		<Slider displayName="Reload Time" key="reload-time" min="0.0" max="30.0" default="2.5" unclamped="false"/>
 		<Slider displayName="Shot Delay" key="delay-timer" min="0" max="3" default="0" unclamped="true"/>
-		<Slider displayName="Magazine Capacity" key="capacity" min="1.0" max="1000.0" default="200.0" unclamped="false"/>
+		<Slider displayName="Magazine Capacity" key="capacity" min="1.0" max="1000.0" default="80.0" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 		<Toggle displayName="Auto Reload" key="auto-reload" default="true" />
 		<Toggle displayName="Display Ammo Count" key="use-ammo-ui" default="false" />
@@ -139,7 +139,7 @@ Check the documentation for more information on how to use modules. -->
 				
 				
 				<Mass>0.25</Mass>
-				<Drag>0.2</Drag>
+				<Drag>0.3</Drag>
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>20</EntityDamage>
@@ -176,7 +176,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
-			<DefaultAmmo>1200</DefaultAmmo>
+			<DefaultAmmo>800</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<useExplodeRotation>true</useExplodeRotation>
@@ -191,16 +191,16 @@ Check the documentation for more information on how to use modules. -->
 			<ExplodeEffect>machinegunHit</ExplodeEffect>
 			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
 			<TrailEffect>newBulletTrailGV100</TrailEffect>
-			<!--<BulletEffect>bulleteffect</BulletEffect>-->
+			<BulletEffect>bulleteffect</BulletEffect>
 			
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			<FuseDelayTime>0.0</FuseDelayTime>
 			
 			<RecoilMultiplier>0.4</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
-			<RandomDiffusion>0.005</RandomDiffusion>
+			<RandomDiffusion>0.0015</RandomDiffusion>
 			
-			<PoolSize>50</PoolSize>
+			<PoolSize>100</PoolSize>
 			
 			<useMagazine>true</useMagazine>
 			<MagazineInfo>
@@ -220,7 +220,7 @@ Check the documentation for more information on how to use modules. -->
 				<AudioClip name="machinegunfire" />
 			</Sounds>
 			<HitSounds>
-				<AudioClip name="machinegunhit" />
+				<AudioClip name="MedievalCannonHitSound" />
 			</HitSounds>
 	</AdShootingProp>
 </Modules>
